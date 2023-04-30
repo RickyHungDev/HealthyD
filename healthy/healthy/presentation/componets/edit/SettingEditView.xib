@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingEditView" customModule="healthy" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="rcw-3g-QfR" id="COH-p6-2Fn"/>
+                <outlet property="editButton" destination="WPJ-pR-Jk3" id="aOC-uB-Afd"/>
+                <outlet property="titleLabel" destination="FmB-Bi-DyX" id="H8f-Bc-ANn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="894" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcw-3g-QfR">
+                    <rect key="frame" x="0.0" y="0.0" width="894" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmB-Bi-DyX">
+                            <rect key="frame" x="16" y="10" width="546" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPJ-pR-Jk3">
+                            <rect key="frame" x="578" y="7" width="300" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="HB8-LO-0nI"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Edit">
+                                <backgroundConfiguration key="background" image="exam_history_sort_button"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="WPJ-pR-Jk3" firstAttribute="leading" secondItem="FmB-Bi-DyX" secondAttribute="trailing" constant="16" id="6d2-Yi-lfx"/>
+                        <constraint firstItem="FmB-Bi-DyX" firstAttribute="top" secondItem="rcw-3g-QfR" secondAttribute="top" constant="10" id="MQT-uL-YrR"/>
+                        <constraint firstAttribute="bottom" secondItem="FmB-Bi-DyX" secondAttribute="bottom" constant="10" id="Tov-uF-rHp"/>
+                        <constraint firstItem="FmB-Bi-DyX" firstAttribute="leading" secondItem="rcw-3g-QfR" secondAttribute="leading" constant="16" id="cPL-tW-1kw"/>
+                        <constraint firstItem="WPJ-pR-Jk3" firstAttribute="top" secondItem="rcw-3g-QfR" secondAttribute="top" constant="7" id="eKe-3f-7Uk"/>
+                        <constraint firstAttribute="bottom" secondItem="WPJ-pR-Jk3" secondAttribute="bottom" constant="7" id="elS-ZI-NX2"/>
+                        <constraint firstAttribute="trailing" secondItem="WPJ-pR-Jk3" secondAttribute="trailing" constant="16" id="ghD-Fa-kaB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rcw-3g-QfR" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="2FW-Be-E78"/>
+                <constraint firstAttribute="trailing" secondItem="rcw-3g-QfR" secondAttribute="trailing" id="Gkr-y4-vHi"/>
+                <constraint firstAttribute="top" secondItem="rcw-3g-QfR" secondAttribute="top" id="WqC-1w-nUa"/>
+                <constraint firstItem="rcw-3g-QfR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="m07-yo-CuH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="21" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="exam_history_sort_button" width="40.666667938232422" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

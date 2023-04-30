@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingDropdownView" customModule="healthy" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="BFY-eN-LSv" id="khA-fm-r9r"/>
+                <outlet property="pickerTextField" destination="CzR-YI-oOT" id="GNV-0G-KIL"/>
+                <outlet property="titleLabel" destination="Mgp-f2-hOx" id="tAq-Cd-WqU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="897" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFY-eN-LSv">
+                    <rect key="frame" x="0.0" y="0.0" width="897" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-f2-hOx">
+                            <rect key="frame" x="16" y="10" width="549" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" background="setting_template_but_nor" translatesAutoresizingMaskIntoConstraints="NO" id="CzR-YI-oOT">
+                            <rect key="frame" x="581" y="7" width="300" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="N2s-lc-eHO"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="CzR-YI-oOT" secondAttribute="bottom" constant="7" id="Taq-Ux-1Nv"/>
+                        <constraint firstItem="Mgp-f2-hOx" firstAttribute="top" secondItem="BFY-eN-LSv" secondAttribute="top" constant="10" id="g0g-ae-eFC"/>
+                        <constraint firstItem="Mgp-f2-hOx" firstAttribute="leading" secondItem="BFY-eN-LSv" secondAttribute="leading" constant="16" id="mK7-uR-vdh"/>
+                        <constraint firstAttribute="bottom" secondItem="Mgp-f2-hOx" secondAttribute="bottom" constant="10" id="npZ-Cl-dut"/>
+                        <constraint firstItem="CzR-YI-oOT" firstAttribute="top" secondItem="BFY-eN-LSv" secondAttribute="top" constant="7" id="oyu-DL-pGC"/>
+                        <constraint firstItem="CzR-YI-oOT" firstAttribute="leading" secondItem="Mgp-f2-hOx" secondAttribute="trailing" constant="16" id="p3s-Du-Wgp"/>
+                        <constraint firstAttribute="trailing" secondItem="CzR-YI-oOT" secondAttribute="trailing" constant="16" id="xkF-Q8-WGd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BFY-eN-LSv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DLe-12-zcO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BFY-eN-LSv" secondAttribute="trailing" id="JIw-5d-0P1"/>
+                <constraint firstItem="BFY-eN-LSv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tz3-J2-VUr"/>
+                <constraint firstAttribute="bottom" secondItem="BFY-eN-LSv" secondAttribute="bottom" id="mxV-I9-846"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="6" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="setting_template_but_nor" width="100" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

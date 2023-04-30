@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingBooleanView" customModule="healthy" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonStackView" destination="X3A-5U-9z7" id="PJi-kL-Rs0"/>
+                <outlet property="containerView" destination="aDB-zY-jfZ" id="mI3-7Z-Wpb"/>
+                <outlet property="noButton" destination="9uI-Tp-NzQ" id="fll-Ty-t1e"/>
+                <outlet property="titleLabel" destination="mys-1C-ZR1" id="eu6-oO-AdJ"/>
+                <outlet property="yesButton" destination="ifa-Zl-dI5" id="xUZ-nt-m3h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="894" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDB-zY-jfZ">
+                    <rect key="frame" x="0.0" y="0.0" width="894" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mys-1C-ZR1">
+                            <rect key="frame" x="16" y="10" width="546" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3A-5U-9z7">
+                            <rect key="frame" x="578" y="7" width="300" height="36"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uI-Tp-NzQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button" backgroundImage="button_box_nor"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifa-Zl-dI5">
+                                    <rect key="frame" x="150" y="0.0" width="150" height="36"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="bFZ-hy-8cW"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="X3A-5U-9z7" secondAttribute="trailing" constant="16" id="I2g-xf-g00"/>
+                        <constraint firstItem="X3A-5U-9z7" firstAttribute="leading" secondItem="mys-1C-ZR1" secondAttribute="trailing" constant="16" id="PNV-fd-1xV"/>
+                        <constraint firstItem="mys-1C-ZR1" firstAttribute="top" secondItem="aDB-zY-jfZ" secondAttribute="top" constant="10" id="PdY-UV-yzH"/>
+                        <constraint firstItem="X3A-5U-9z7" firstAttribute="top" secondItem="aDB-zY-jfZ" secondAttribute="top" constant="7" id="R6Z-Os-Ib8"/>
+                        <constraint firstItem="mys-1C-ZR1" firstAttribute="leading" secondItem="aDB-zY-jfZ" secondAttribute="leading" constant="16" id="fnd-VY-Scn"/>
+                        <constraint firstAttribute="bottom" secondItem="X3A-5U-9z7" secondAttribute="bottom" constant="7" id="lrj-SC-2Jy"/>
+                        <constraint firstAttribute="bottom" secondItem="mys-1C-ZR1" secondAttribute="bottom" constant="10" id="yg6-if-3T4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aDB-zY-jfZ" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="0nX-rX-vLi"/>
+                <constraint firstAttribute="top" secondItem="aDB-zY-jfZ" secondAttribute="top" id="SNv-gU-oMf"/>
+                <constraint firstItem="aDB-zY-jfZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pUO-yi-Hwe"/>
+                <constraint firstAttribute="trailing" secondItem="aDB-zY-jfZ" secondAttribute="trailing" id="zmY-5w-v12"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="63" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_box_nor" width="33.333332061767578" height="33.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
